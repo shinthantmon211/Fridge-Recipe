@@ -23,6 +23,12 @@ document.getElementById("add").onclick = add;
 async function ask() {
   const res = await fetch("/api/recipe");
   const data = await res.json();
+
+  if (!res.ok) {
+    document.getElementById("result").textContent = "エラー: " + data.error;
+    return;
+  }
+
   document.getElementById("result").textContent = data.recipes[0].name;
 }
 

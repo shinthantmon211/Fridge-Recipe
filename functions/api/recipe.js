@@ -1,7 +1,32 @@
-const MODEL = "gemini-3.8-flash";
+const MODEL = "gemini-3.5-flash-lite";
 
 export async function onRequestGet({ env }) {
-  const res = await fetch(
+  let res;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    res = await callGemini(env);
+    if (res.status !== 503) break;
+    await new Promise((r) => setTimeout(r, 1000 * attempt));
+  }
+
+  const data = await res.json();
+  console.log(JSON.stringify(data));
+
+  if (!res.ok) {
+    return new Response(JSON.stringify({ error: data.error?.message }), {
+      status: res.status,
+      headers: { "Content-Type": "application/json; charset=utf-8" },
+    });
+  }
+
+  const name = data.candidates[0].content.parts[0].text;
+
+  return new Response(JSON.stringify({ recipes: [{ name }] }), {
+    headers: { "Content-Type": "application/json; charset=utf-8" },
+  });
+}
+
+function callGemini(env) {
+  return fetch(
     `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`,
     {
       method: "POST",
@@ -22,20 +47,4 @@ export async function onRequestGet({ env }) {
       }),
     },
   );
-
-  const data = await res.json();
-  console.log(JSON.stringify(data));
-
-  if (!res.ok) {
-    return new Response(JSON.stringify({ error: data.error?.message }), {
-      status: res.status,
-      headers: { "Content-Type": "application/json; charset=utf-8" },
-    });
-  }
-
-  const name = data.candidates[0].content.parts[0].text;
-
-  return new Response(JSON.stringify({ recipes: [{ name }] }), {
-    headers: { "Content-Type": "application/json; charset=utf-8" },
-  });
 }
