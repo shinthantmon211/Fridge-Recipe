@@ -25,3 +25,5 @@ async function ask() {
   const data = await res.json();
   document.getElementById("result").textContent = data.recipes(0).name;
 }
+
+document.getElementById("search").onclick = ask;
