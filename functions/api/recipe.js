@@ -1,9 +1,14 @@
 const MODEL = "gemini-3.5-flash-lite";
 
-export async function onRequestGet({ env }) {
+export async function onRequestPost({ env, request }) {
+  const body = await request.json();
+  console.log(body.things);
+
+  const foods = body.things.join("、")
+
   let res;
   for (let attempt = 1; attempt <= 3; attempt++) {
-    res = await callGemini(env);
+    res = await callGemini(env, foods);
     if (res.status !== 503) break;
     await new Promise((r) => setTimeout(r, 1000 * attempt));
   }
@@ -25,7 +30,7 @@ export async function onRequestGet({ env }) {
   });
 }
 
-function callGemini(env) {
+function callGemini(env, foods) {
   return fetch(
     `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`,
     {
@@ -39,7 +44,7 @@ function callGemini(env) {
           {
             parts: [
               {
-                text: "卵とねぎで作れる料理名を1つだけ、料理名だけで答えてください",
+                text: `${foods}で作れる料理名を１つだけ、料理名だけで答えてください`,
               },
             ],
           },
