@@ -26,7 +26,14 @@ export async function onRequestGet({ env }) {
   const data = await res.json();
   console.log(JSON.stringify(data));
 
-  const name = data.candidates[0].contents.parts[0].text;
+  if (!res.ok) {
+    return new Response(JSON.stringify({ error: data.error?.message }), {
+      status: res.status,
+      headers: { "Content-Type": "application/json; charset=utf-8" },
+    });
+  }
+
+  const name = data.candidates[0].content.parts[0].text;
 
   return new Response(JSON.stringify({ recipes: [{ name }] }), {
     headers: { "Content-Type": "application/json; charset=utf-8" },
