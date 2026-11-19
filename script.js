@@ -27,6 +27,10 @@ function add() {
 document.getElementById("add").onclick = add;
 
 async function ask() {
+  if (memo.length === 0){
+    document.getElementById("result").textContent="食材を入れてください！"
+    return;
+  }
   const res = await fetch("/api/recipe",{
     method: "POST",
     headers: {
