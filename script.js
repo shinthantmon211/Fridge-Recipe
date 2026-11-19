@@ -7,7 +7,7 @@ function add() {
   }
 
   memo.push(item);
-
+  document.getElementById("item").value = "";
   const li = document.createElement("li");
   li.textContent = item;
 
@@ -31,6 +31,7 @@ async function ask() {
     document.getElementById("result").textContent = "食材を入れてください！";
     return;
   }
+
   document.getElementById("result").textContent = "レシピを考え中";
   const res = await fetch("/api/recipe", {
     method: "POST",
@@ -51,8 +52,31 @@ async function ask() {
   for (const r of data.recipes) {
     const li = document.createElement("li");
     li.textContent = r.name;
+    li.onclick = function () {
+      showSteps(r.name);
+    };
     document.getElementById("recipes").appendChild(li);
   }
 }
 
 document.getElementById("search").onclick = ask;
+
+async function showSteps(dish) {
+  document.getElementById("result").textContent = "レシピの手順を探してます。";
+
+  const res = await fetch("/api/steps", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ dish }),
+  });
+
+  const data = await res.json();
+
+  document.getElementById("steps").textContent = "";
+  for (const s of data.steps) {
+    const li = document.createElement("li");
+    li.textContent = s;
+    document.getElementById("steps").appendChild(li);
+  }
+  document.getElementById("result").textContent = "";
+}
