@@ -1,0 +1,139 @@
+<mxfile host="65bd71144e">
+    <diagram id="r0G9zObnKYegYfknv1tv" name="Page-1">
+        <mxGraphModel dx="1713" dy="603" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="DV5NO6htXkGvEZjhm6ov-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#666666;fillColor=#f5f5f5;align=center;verticalAlign=middle;rounded=0;fontColor=#333333;" value="&lt;b&gt;&lt;u&gt;自炊する人の、冷蔵庫の中身を思い出せず手持ちの食材に合うレシピを選べないペインを、今ある食材から作れる料理がすぐ分かる状態へ変えるためのレシピ提案アプリ&lt;/u&gt;&lt;/b&gt;" vertex="1">
+                    <mxGeometry height="70" width="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="自炊する人" vertex="1">
+                    <mxGeometry height="30" width="80" y="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="食材をメモする" vertex="1">
+                    <mxGeometry height="60" width="120" x="20" y="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="冷蔵庫の中身を確認する" vertex="1">
+                    <mxGeometry height="60" width="120" x="190" y="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="使った食材を消す" vertex="1">
+                    <mxGeometry height="60" width="120" x="360" y="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="食材からレシピを探す" vertex="1">
+                    <mxGeometry height="60" width="120" x="530" y="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="候補から選ぶ" vertex="1">
+                    <mxGeometry height="60" width="120" x="700" y="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="手順を見て調理する" vertex="1">
+                    <mxGeometry height="60" width="120" x="870" y="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="気に入ったレシピを保存する" vertex="1">
+                    <mxGeometry height="60" width="120" x="1040" y="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="保存したレシピを見返す" vertex="1">
+                    <mxGeometry height="60" width="120" x="1210" y="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#f8cecc;strokeColor=#b85450;" value="食材を登録する" vertex="1">
+                    <mxGeometry height="60" width="120" x="20" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#f8cecc;strokeColor=#b85450;" value="レシピを探す" vertex="1">
+                    <mxGeometry height="60" width="120" x="530" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#f8cecc;strokeColor=#b85450;" value="料理する" vertex="1">
+                    <mxGeometry height="60" width="120" x="870" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#f8cecc;strokeColor=#b85450;" value="レシピを残す" vertex="1">
+                    <mxGeometry height="60" width="120" x="1040" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="食材名を入力して追加する" vertex="1">
+                    <mxGeometry height="60" width="120" x="20" y="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="食材を一覧で表示" vertex="1">
+                    <mxGeometry height="60" width="120" x="190" y="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;div style=&quot;text-align: left;&quot;&gt;選んで削除&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="360" y="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="ボタンを押すと食材を Gemini API に送ってレシピをもらう" vertex="1">
+                    <mxGeometry height="60" width="120" x="530" y="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="保存したレシピ一覧や検索で探す" vertex="1">
+                    <mxGeometry height="60" width="120" x="1210" y="395" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="候補を一覧で見る" vertex="1">
+                    <mxGeometry height="60" width="120" x="700" y="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;meta charset=&quot;utf-8&quot;&gt;数量・賞味期限も入力" vertex="1">
+                    <mxGeometry height="60" width="120" x="20" y="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="タイマーを使う" vertex="1">
+                    <mxGeometry height="60" width="120" x="870" y="490" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;meta charset=&quot;utf-8&quot;&gt;手順を画面に表示" vertex="1">
+                    <mxGeometry height="60" width="120" x="870" y="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;meta charset=&quot;utf-8&quot;&gt;使い切りのチェック" vertex="1">
+                    <mxGeometry height="60" width="120" x="360" y="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="アプリを閉じても残す（SQLite に保存）" vertex="1">
+                    <mxGeometry height="60" width="120" x="190" y="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="先に使いたい食材を選ぶ" vertex="1">
+                    <mxGeometry height="60" width="120" x="530" y="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="お気に入りに入れる" vertex="1">
+                    <mxGeometry height="60" width="120" x="1040" y="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="期限が近いものを目立たせる" vertex="1">
+                    <mxGeometry height="60" width="120" x="190" y="490" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="好み・苦手な食材を除外" vertex="1">
+                    <mxGeometry height="60" width="120" x="700" y="490" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="見た履歴を残す" vertex="1">
+                    <mxGeometry height="60" width="120" x="1209" y="490" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;meta charset=&quot;utf-8&quot;&gt;足りない食材だけ買い物リストにする" vertex="1">
+                    <mxGeometry height="60" width="120" x="530" y="490" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="入力の途中で候補を出す" vertex="1">
+                    <mxGeometry height="60" width="120" x="20" y="490" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="人数に合わせて分量を計算する" vertex="1">
+                    <mxGeometry height="60" width="120" x="870" y="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="3件くらいに絞る" vertex="1">
+                    <mxGeometry height="60" width="120" x="700" y="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-38" edge="1" parent="1" style="shape=link;html=1;" value="">
+                    <mxGeometry relative="1" width="100" as="geometry">
+                        <mxPoint x="-20" y="269" as="sourcePoint"/>
+                        <mxPoint x="1312.0408163265306" y="269" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-39" edge="1" parent="1" style="endArrow=none;html=1;" value="">
+                    <mxGeometry height="50" relative="1" width="50" as="geometry">
+                        <mxPoint x="-20" y="360" as="sourcePoint"/>
+                        <mxPoint x="1310" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-42" edge="1" parent="1" style="endArrow=none;html=1;" value="">
+                    <mxGeometry height="50" relative="1" width="50" as="geometry">
+                        <mxPoint x="-10" y="480" as="sourcePoint"/>
+                        <mxPoint x="1320" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-44" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="ウォーキングスケルトン" vertex="1">
+                    <mxGeometry height="50" width="120" x="-160" y="295" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-45" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="タスクリスト" vertex="1">
+                    <mxGeometry height="50" width="120" x="-160" y="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="rQXFIZl5qHcLgX7fw558-46" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="便利にする" vertex="1">
+                    <mxGeometry height="50" width="120" x="-160" y="500" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
