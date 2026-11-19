@@ -17,7 +17,7 @@ function add() {
     li.remove();
     const i = memo.indexOf(item);
 
-    memo.splice(i, 1)
+    memo.splice(i, 1);
   };
   li.appendChild(del);
 
@@ -27,28 +27,32 @@ function add() {
 document.getElementById("add").onclick = add;
 
 async function ask() {
-  if (memo.length === 0){
-    document.getElementById("result").textContent="食材を入れてください！"
+  if (memo.length === 0) {
+    document.getElementById("result").textContent = "食材を入れてください！";
     return;
   }
-  const res = await fetch("/api/recipe",{
+  document.getElementById("result").textContent = "レシピを考え中";
+  const res = await fetch("/api/recipe", {
     method: "POST",
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
     },
-    body : JSON.stringify({
-      things: memo
-    })
-
+    body: JSON.stringify({
+      things: memo,
+    }),
   });
   const data = await res.json();
-
   if (!res.ok) {
     document.getElementById("result").textContent = "エラー: " + data.error;
     return;
   }
-
-  document.getElementById("result").textContent = data.recipes[0].name;
+  document.getElementById("result").textContent = "";
+  document.getElementById("recipes").textContent = "";
+  for (const r of data.recipes) {
+    const li = document.createElement("li");
+    li.textContent = r.name;
+    document.getElementById("recipes").appendChild(li);
+  }
 }
 
 document.getElementById("search").onclick = ask;
