@@ -15,7 +15,8 @@ function add() {
 }
 
 document.getElementById("add").onclick = add;
-document.getElementById("item").onkeydown = function (e) {   //Add ingredient with Enter key
+document.getElementById("item").onkeydown = function (e) {
+  //Add ingredient with Enter key
   if (e.key === "Enter" && !e.isComposing) {
     add();
   }
@@ -74,6 +75,11 @@ async function showSteps(dish) {
   });
 
   const data = await res.json();
+  if (!res.ok) {
+    document.getElementById("result").textContent =
+      "手順を取得できませんでした:" + data.error;
+    return;
+  }
 
   document.getElementById("steps").textContent = "";
   for (const s of data.steps) {
