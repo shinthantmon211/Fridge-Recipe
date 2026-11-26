@@ -25,7 +25,7 @@ export async function onRequestPost({ env, request }) {
 
   const text = data.candidates[0].content.parts[0].text;
 
-  const steps = text.split("\n");
+  const steps = text.split("\n").filter((s) => s.trim() !== "");
 
   return new Response(JSON.stringify({ steps }), {
     headers: { "Content-Type": "application/json; charset=utf-8" },

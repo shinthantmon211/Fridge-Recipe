@@ -25,7 +25,7 @@ export async function onRequestPost({ env, request }) {
 
   const text = data.candidates[0].content.parts[0].text;
 
-  const names = text.split("\n");
+  const names = text.split("\n").filter((s) => s.trim() !== "");
 
   const recipes = [];
   for (const n of names) {

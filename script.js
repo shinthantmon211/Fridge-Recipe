@@ -15,7 +15,7 @@ function add() {
 }
 
 document.getElementById("add").onclick = add;
-document.getElementById("item").onkeydown = function (e) {
+document.getElementById("item").onkeydown = function (e) {   //Add ingredient with Enter key
   if (e.key === "Enter" && !e.isComposing) {
     add();
   }
