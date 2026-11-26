@@ -1,4 +1,4 @@
-const memo = [];
+const memo = JSON.parse(localStorage.getItem("memo"))||[];
 function add() {
   const item = document.getElementById("item").value;
 
@@ -7,25 +7,18 @@ function add() {
   }
 
   memo.push(item);
+  localStorage.setItem("memo", JSON.stringify(memo));
+
   document.getElementById("item").value = "";
-  const li = document.createElement("li");
-  li.textContent = item;
 
-  const del = document.createElement("button");
-  del.textContent = "削除";
-  del.onclick = function () {
-    li.remove();
-    const i = memo.indexOf(item);
-
-    memo.splice(i, 1);
-  };
-  li.appendChild(del);
-
-  document.getElementById("list").appendChild(li);
+  showItem(item);
 }
 
 document.getElementById("add").onclick = add;
 
+for (const x of memo) {
+  showItem(x);
+}
 async function ask() {
   if (memo.length === 0) {
     document.getElementById("result").textContent = "食材を入れてください！";
@@ -84,3 +77,21 @@ async function showSteps(dish) {
   document.getElementById("result").textContent = "";
 }
 
+function showItem(item){
+  const li = document.createElement("li");
+  li.textContent = item;
+
+  const del = document.createElement("button");
+  del.textContent = "削除";
+  del.onclick = function () {
+    li.remove();
+    const i = memo.indexOf(item);
+
+    memo.splice(i, 1);
+    localStorage.setItem("memo", JSON.stringify(memo));
+
+  };
+  li.appendChild(del);
+
+  document.getElementById("list").appendChild(li);
+}
