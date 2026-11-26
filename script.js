@@ -53,6 +53,8 @@ async function ask() {
     const li = document.createElement("li");
     li.textContent = r.name;
     li.onclick = function () {
+      document.querySelector("#recipes li.selected")?.classList.remove("selected");
+      li.classList.add("selected");
       showSteps(r.name);
     };
     document.getElementById("recipes").appendChild(li);
@@ -80,3 +82,4 @@ async function showSteps(dish) {
   }
   document.getElementById("result").textContent = "";
 }
+
