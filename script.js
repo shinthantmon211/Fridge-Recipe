@@ -49,6 +49,7 @@ async function ask() {
   }
   document.getElementById("result").textContent = "";
   document.getElementById("recipes").textContent = "";
+  document.getElementById("steps").textContent = "";
   for (const r of data.recipes) {
     const li = document.createElement("li");
     li.textContent = r.name;
