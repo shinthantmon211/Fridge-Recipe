@@ -1,4 +1,4 @@
-const memo = JSON.parse(localStorage.getItem("memo"))||[];
+const memo = JSON.parse(localStorage.getItem("memo")) || [];
 function add() {
   const item = document.getElementById("item").value;
 
@@ -15,6 +15,11 @@ function add() {
 }
 
 document.getElementById("add").onclick = add;
+document.getElementById("item").onkeydown = function (e) {
+  if (e.key === "Enter" && !e.isComposing) {
+    add();
+  }
+};
 
 for (const x of memo) {
   showItem(x);
@@ -47,7 +52,9 @@ async function ask() {
     const li = document.createElement("li");
     li.textContent = r.name;
     li.onclick = function () {
-      document.querySelector("#recipes li.selected")?.classList.remove("selected");
+      document
+        .querySelector("#recipes li.selected")
+        ?.classList.remove("selected");
       li.classList.add("selected");
       showSteps(r.name);
     };
@@ -77,7 +84,7 @@ async function showSteps(dish) {
   document.getElementById("result").textContent = "";
 }
 
-function showItem(item){
+function showItem(item) {
   const li = document.createElement("li");
   li.textContent = item;
 
@@ -89,7 +96,6 @@ function showItem(item){
 
     memo.splice(i, 1);
     localStorage.setItem("memo", JSON.stringify(memo));
-
   };
   li.appendChild(del);
 
