@@ -1,12 +1,60 @@
+#recipes {
+  list-style: none;
+  padding-left: 0;
+}
 #recipes li {
+  background: white;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
 #recipes li:hover {
-  background: #e3f2fd;
+  background: #fff3e0;
 }
 
 #recipes li.selected {
   background: #ffcc80;
   font-weight: bold;
+}
+
+body {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #fff8f3;
+}
+h1 {
+  color: #ff7043;
+}
+button {
+  background: #ff7043;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  background: #f4511e;
+}
+input {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 16px;
+}
+#list li {
+  margin: 6px 0;
+}
+#list button {
+  background: #e0e0e0;
+  color: #555;
+  padding: 2px 8px;
+  font-size: 12px;
+  margin-left: 8px;
 }
